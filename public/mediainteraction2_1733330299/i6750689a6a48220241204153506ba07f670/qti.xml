@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i6750689a6a48220241204153506ba07" title="MediaInteraction2" label="MediaInteraction2" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="2024.11 LTS">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="integer"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="0" normalMinimum="0"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <mediaInteraction responseIdentifier="RESPONSE" autostart="false" minPlays="0" maxPlays="0" loop="false">
+          <prompt>
+            <p>Valentina works at a radio station. Her interview guest today is Luca who opens the interview by playing a short excerpt of the song Lenny by Stevie Ray Vaughan on his guitar. They then talk about this song - we learn which album it was released on and what the main musical influences were.</p>
+            <p>First, listen to their conversation!</p>
+          </prompt>
+          <object data="assets/4f9c42e86750282679627.mp3" type="audio/mpeg" height="30"/>
+        </mediaInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="slider_percentag" title="Calculate a percentage (Slider Interaction)" label="Calculate a percentage (Slider Interaction)" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="2024.03">
+  <responseDeclaration identifier="slider_percentage" cardinality="single" baseType="integer">
+    <correctResponse>
+      <value><![CDATA[79]]></value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="1"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>1</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h1>Slider Interaction</h1>
+        <h2>Calculate a percentage</h2>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-6">
+        <sliderInteraction responseIdentifier="slider_percentage" lowerBound="0" upperBound="100" step="1" stepLabel="false" orientation="horizontal" reverse="false">
+          <prompt>
+            <p>The TAO team members reside all over the world with offices in Boston, Luxembourg and Minsk.</p>
+            <p>Dan, who works in Boston wants to visit the Luxembourg office and then a few days later go to Minsk.</p>
+            <p>The distances between these cities are:</p>
+            <ul>
+              <li>Boston to Luxembourg: <strong>3,572 miles</strong></li>
+              <li>Luxembourg to Minsk: <strong>973 miles</strong></li>
+            </ul>
+            <p>Once he arrives in Luxembourg, how much of the way has he done (in %, rounded up to a full integer)?</p>
+            <p> </p>
+          </prompt>
+        </sliderInteraction>
+      </div>
+      <div class="col-1"/>
+      <div class="col-5"><img src="assets/boston-skyline-metropolis.jpg" alt="Boston Skyline" width="100%" type="image/jpeg"/>
+        Boston Skyline, photo by <a href="https://www.flickr.com/photos/64655144@N08/19062934099/" target="_blank">Stephan Zech</a>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="slider_percentage"/>
+          <correct identifier="slider_percentage"/>
+        </match>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <baseValue baseType="integer">1</baseValue>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+  </responseProcessing>
+</assessmentItem>

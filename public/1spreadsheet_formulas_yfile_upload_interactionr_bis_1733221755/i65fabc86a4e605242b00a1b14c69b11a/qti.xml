@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:qh5="http://www.imsglobal.org/xsd/imsqtiv2p2_html5_v1p0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i65fabc86a4e605242b00a1b14c69b11a" title="Spreadsheet formulas (File Upload Interaction)" label="1Spreadsheet formulas (File Upload Interaction) bis" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="2024.03">
+  <responseDeclaration identifier="sales_spreadsheet" cardinality="single" baseType="file"/>
+  <outcomeDeclaration identifier="ACCURACY" cardinality="single" baseType="float" interpretation="Layout &amp; Formatting Accuracy" longInterpretation="" externalScored="human" normalMaximum="5" normalMinimum="0"/>
+  <outcomeDeclaration identifier="CALCULATION" cardinality="single" baseType="float" interpretation="Cell Formula and Calculation" longInterpretation="" externalScored="human" normalMaximum="5" normalMinimum="0"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" longInterpretation=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <h1>File Upload Interaction</h1>
+        <h2>Spreadsheet formulas</h2>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-5">
+        <uploadInteraction responseIdentifier="sales_spreadsheet">
+          <prompt>
+            <p>Recreate the spreadsheet on the right in an editor of your choice and populate the gray cells. Upload the resulting file below.</p>
+            <p>You have to use functions for all calculations.</p>
+          </prompt>
+        </uploadInteraction>
+      </div>
+      <div class="col-1"/>
+      <div class="col-6">
+        <p>
+          <img src="assets/sales-1.png" alt="sales" width="100%" type="image/png"/>
+        </p>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing>
+    <responseCondition>
+      <responseIf>
+        <match>
+          <variable identifier="sales_spreadsheet"/>
+          <correct identifier="sales_spreadsheet"/>
+        </match>
+        <setOutcomeValue identifier="SCORE">
+          <sum>
+            <variable identifier="SCORE"/>
+            <baseValue baseType="integer">1</baseValue>
+          </sum>
+        </setOutcomeValue>
+      </responseIf>
+    </responseCondition>
+  </responseProcessing>
+</assessmentItem>

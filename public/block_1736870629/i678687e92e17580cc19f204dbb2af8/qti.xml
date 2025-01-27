@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i678687e92e17580cc19f204dbb2af8" title="block" label="block" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.4.0-sprint121">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string">
+    <correctResponse>
+      <value><![CDATA[{"xPlane":[{"y":0,"z":0,"found":true},{"y":0,"z":1,"found":false},{"y":1,"z":0,"found":false},{"y":1,"z":1,"found":false}],"yPlane":[{"x":0,"z":0,"found":true},{"x":0,"z":1,"found":false},{"x":1,"z":0,"found":false},{"x":1,"z":1,"found":false}],"zPlane":[{"x":0,"y":0,"found":true},{"x":0,"y":1,"found":false},{"x":1,"y":0,"found":false},{"x":1,"y":1,"found":false}]}]]></value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/>
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing ...</p>
+      </div>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction_v1" customInteractionTypeIdentifier="blocks" data-version="1.0.0">
+            <properties>
+              <property key="gridDivisions">2</property>
+              <property key="cubePixelSize">100</property>
+              <property key="width">600</property>
+              <property key="height">600</property>
+            </properties>
+            <modules>
+                    <module id="blocks/interaction/runtime/js/index" primaryPath="../interaction/runtime/js/index.js"/></modules>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="pciInteraction">
+                <style>
+        .pciInteraction ul.pci{
+            list-style-type: none;
+            margin: 0 5px;
+            padding: 0;
+            display: inline-block;
+            position: relative;
+            top: 7px;
+        }
+        .pciInteraction ul.pci li{
+            float: left;
+            text-align: left;
+            list-style-type: none;
+        }
+    </style>
+                <div class="prompt"/>
+                <ul class="pci"/>
+              </div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

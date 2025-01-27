@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:html5="html5" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i605b50d60c465892a88c0651ffd390" title="decisiontask" label="decisiontask" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="3.4.0-sprint134">
+  <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="string"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float"/> 
+  <stylesheet href="style/custom/tao-user-styles.css" type="text/css" media="all" title=""/>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12"/>
+    </div>
+    <div class="grid-row">
+      <div class="col-12"/>
+    </div>
+    <div class="grid-row">
+      <div class="col-12">
+        <customInteraction responseIdentifier="RESPONSE">
+          <portableCustomInteraction xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction"
+          class="type:tao"
+          customInteractionTypeIdentifier="decisiontask" hook="decisiontask/runtime/decisiontask.amd.js" version="0.0.10">
+            <resources>
+              <libraries>
+                <lib id="IMSGlobal/jquery_2_1_1"/>
+                <lib id="decisiontask/runtime/js/renderer"/>
+              </libraries><stylesheets>
+                <link href="decisiontask/runtime/css/base.css" type="text/css" title="base"/><link href="decisiontask/runtime/css/decisiontask.css" type="text/css" title="decisiontask"/></stylesheets><mediaFiles><file src="decisiontask/runtime/assets/feedback0.wav" type="application/octet-stream"/><file src="decisiontask/runtime/assets/feedback1.wav" type="application/octet-stream"/><file src="decisiontask/runtime/assets/feedback2.wav" type="application/octet-stream"/><file src="decisiontask/runtime/assets/feedback3.wav" type="application/octet-stream"/><file src="decisiontask/runtime/assets/feedback4.wav" type="application/octet-stream"/><file src="decisiontask/runtime/assets/feedback5.wav" type="application/octet-stream"/></mediaFiles></resources>
+            <properties>
+              <properties key="data">
+                <properties key="0">
+                  <property key="stimulusindex">1</property>
+                  <property key="stimulus">5 + 7 = 12</property>
+                  <property key="response">1
+</property>
+                </properties>
+                <properties key="1">
+                  <property key="stimulusindex">2</property>
+                  <property key="stimulus">4 + 4 = 9</property>
+                  <property key="response">2
+</property>
+                </properties>
+                <properties key="2">
+                  <property key="stimulusindex">3</property>
+                  <property key="stimulus">7 + 6 = 13</property>
+                  <property key="response">1</property>
+                </properties>
+              </properties>
+              <property key="uploadedFname">stimuli_IIL_item.csv</property>
+              <property key="feedback">true</property>
+              <property key="shufflestimuli"></property>
+              <property key="respkey"></property>
+              <property key="tlimit">0</property>
+              <property key="level">2</property>
+              <property key="buttonlabel0">True</property>
+              <property key="buttonlabel1">False</property>
+              <property key="buttonlabel2"></property>
+              <property key="buttonlabel3"></property>
+              <property key="buttonlabel4"></property>
+              <property key="buttonlabel5"></property>
+              <property key="buttonlabel6"></property>
+              <property key="buttonlabel7"></property>
+            </properties>
+            <markup xmlns="http://www.w3.org/1999/xhtml">
+              <div class="decisiontask">
+                <div class="prompt"/>
+                <div class="globalWrapper"/>
+              </div>
+            </markup>
+          </portableCustomInteraction>
+        </customInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>

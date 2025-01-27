@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd" identifier="i677d35643d0b320250107150836b4f2" title="Item 2" label="Graphic Order Interaction 1" xml:lang="en-US" adaptive="false" timeDependent="false" toolName="TAO" toolVersion="2024.11 LTS">
+  <responseDeclaration identifier="RESPONSE" cardinality="ordered" baseType="identifier"/>
+  <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="float" normalMaximum="0" normalMinimum="0"/>
+  <outcomeDeclaration identifier="MAXSCORE" cardinality="single" baseType="float">
+    <defaultValue>
+      <value>0</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <itemBody>
+    <div class="grid-row">
+      <div class="col-12">
+        <graphicOrderInteraction responseIdentifier="RESPONSE" class="responsive">
+          <prompt>Test</prompt>
+          <object data="map-us.png" type="image/png" width="795" height="492"/>
+          <hotspotChoice identifier="hotspot_1" fixed="false" shape="rect" coords="74,101,234,194"/>
+          <hotspotChoice identifier="hotspot_2" fixed="false" shape="ellipse" coords="338,259,77,73"/>
+          <hotspotChoice identifier="hotspot_3" fixed="false" shape="ellipse" coords="444,148,47,46"/>
+          <hotspotChoice identifier="hotspot_4" fixed="false" shape="poly" coords="114,269,146,295,181,271,154,249"/>
+        </graphicOrderInteraction>
+      </div>
+    </div>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/question/qti_v2p2/rptemplates/match_correct"/>
+</assessmentItem>
