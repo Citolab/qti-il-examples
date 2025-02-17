@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --force",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -12,7 +12,7 @@
     "vite": "^6.0.3"
   },
   "dependencies": {
-    "@citolab/qti-components": "https://pkg.pr.new/Citolab/qti-components/@citolab/qti-components@557fb0b",
+    "@citolab/qti-components": "https://pkg.pr.new/Citolab/qti-components/@citolab/qti-components@16e76fd",
     "@citolab/qti-convert": "^0.2.14",
     "cheerio": "^1.0.0"
   }

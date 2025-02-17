@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<qti-assessment-item xmlns="http://www.imsglobal.org/xsd/imsqtiasi_v3p0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqtiasi_v3p0 https://purl.imsglobal.org/spec/qti/v3p0/schema/xsd/imsqti_asiv3p0_v1p0.xsd"
+    adaptive="false" identifier="geode3473576444" label="23XEVA2GT_MM_NP_103c"
+    time-dependent="false" title="23XEVA2GT_MM_NP_103c" tool-name="TAO" tool-version="2021.11"
+    xml:lang="fr-FR">
+    <qti-response-declaration base-type="identifier" cardinality="multiple" identifier="L2MNP0408">
+        <qti-correct-response>
+            <qti-value>L2MNP040801</qti-value>
+        </qti-correct-response>
+    </qti-response-declaration>
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="SCORE"
+        normal-maximum="1" />
+    <qti-outcome-declaration base-type="float" cardinality="single" identifier="MAXSCORE">
+        <qti-default-value>
+            <qti-value>1</qti-value>
+        </qti-default-value>
+    </qti-outcome-declaration>
+    <qti-item-body>
+        <div class="grid-row" dir="ltr">
+            <div class="col-12">
+                <h2>Numbers and calculations</h2>
+            </div>
+        </div>
+        <div class="grid-row" dir="ltr">
+            <div class="col-12" />
+        </div>
+        <div class="grid-row" dir="ltr">
+            <div class="col-12">
+                <div>A plane travels 4 hours and 30 minutes at a constant speed.</div>
+        <div>What
+            fraction of the journey has he covered after 1h30 of flight?</div>
+            </div>
+        </div>
+        <div class="grid-row" dir="ltr">
+            <div class="col-12">
+                <qti-choice-interaction max-choices="1" min-choices="0" orientation="vertical"
+                    response-identifier="L2MNP0408" shuffle="true">
+                    <qti-prompt>
+                        <p>Check the correct answer.</p>
+                    </qti-prompt>
+                    <qti-simple-choice fixed="false" identifier="L2MNP040801" show-hide="show">
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mstyle displaystyle="true" scriptlevel="0">
+                                        <mrow class="MJX-TeXAtom-ORD">
+                                            <mfrac>
+                                                <mn>1</mn>
+                                                <mn>3</mn>
+                                            </mfrac>
+                                        </mrow>
+                                    </mstyle>
+                                    <annotation encoding="latex">\frac{1}{3}</annotation>
+                                </semantics>
+                            </math>
+                        </p>
+                    </qti-simple-choice>
+                    <qti-simple-choice fixed="false" identifier="L2MNP040802" show-hide="show">
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mstyle displaystyle="true" scriptlevel="0">
+                                        <mrow class="MJX-TeXAtom-ORD">
+                                            <mfrac>
+                                                <mn>13</mn>
+                                                <mn>43</mn>
+                                            </mfrac>
+                                        </mrow>
+                                    </mstyle>
+                                    <annotation encoding="latex">\frac{13}{43}</annotation>
+                                </semantics>
+                            </math>
+                        </p>
+                    </qti-simple-choice>
+                    <qti-simple-choice fixed="false" identifier="L2MNP040803" show-hide="show">
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mstyle displaystyle="true" scriptlevel="0">
+                                        <mrow class="MJX-TeXAtom-ORD">
+                                            <mfrac>
+                                                <mn>2</mn>
+                                                <mn>3</mn>
+                                            </mfrac>
+                                        </mrow>
+                                    </mstyle>
+                                    <annotation encoding="latex">\frac{2}{3}</annotation>
+                                </semantics>
+                            </math>
+                        </p>
+                    </qti-simple-choice>
+                    <qti-simple-choice fixed="false" identifier="L2MNP040804" show-hide="show">
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <semantics>
+                                    <mstyle displaystyle="true" scriptlevel="0">
+                                        <mrow class="MJX-TeXAtom-ORD">
+                                            <mfrac>
+                                                <mn>1</mn>
+                                                <mn>4</mn>
+                                            </mfrac>
+                                        </mrow>
+                                    </mstyle>
+                                    <annotation encoding="latex">\frac{1}{4}</annotation>
+                                </semantics>
+                            </math>
+                        </p>
+                    </qti-simple-choice>
+                </qti-choice-interaction>
+            </div>
+        </div>
+    </qti-item-body>
+    <qti-response-processing>
+        <qti-response-condition>
+            <qti-response-if>
+                <qti-match>
+                    <qti-variable identifier="L2MNP0408" />
+                    <qti-correct identifier="L2MNP0408" />
+                </qti-match>
+                <qti-set-outcome-value identifier="SCORE">
+                    <qti-sum>
+                        <qti-variable identifier="SCORE" />
+                        <qti-base-value base-type="integer">1</qti-base-value>
+                    </qti-sum>
+                </qti-set-outcome-value>
+            </qti-response-if>
+        </qti-response-condition>
+    </qti-response-processing>
+</qti-assessment-item>

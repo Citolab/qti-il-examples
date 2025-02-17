@@ -51,10 +51,19 @@ document.querySelector("#app").innerHTML = `
           <style>
             qti-assessment-item {
               aspect-ratio: 16 / 9;
+              padding: 1rem;
+              display: block;
+              width: 800px;
             }
           </style>
         </template>
       </item-container>
+      <item-show-correct-response
+      showCorrectText="montrer la bonne réponse"
+      hideCorrectText="cacher la bonne réponse"
+      noCorrectResponseText="pas de réponse correcte"
+      ></item-show-correct-response>
+      <print-item-variables></print-item-variables>
     </qti-item>
   </div>
 </div>

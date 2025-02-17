@@ -44,6 +44,12 @@ export const items = [
     href: "/decision_pci/i605b50d60c465892a88c0651ffd390/qti.xml",
     canPreview: false, // Only 1 of the same PCI can be rendered at a time
   },
+  {
+    name: "mathml",
+    href: "/mathml/qti.xml",
+    qti3: true,
+    canPreview: true,
+  },
 ];
 
 async function fetchXMLFile(url) {
@@ -114,12 +120,13 @@ function removeDoubleSlashes(str) {
 
 export async function getItemDoc(name) {
   const item = items.find((i) => i.name === name);
-  const qti2 = await fetchXMLFile(item.href);
-  const qti3 = await transformQti(
-    qti2,
-    "https://europe-west4-qti-convert.cloudfunctions.net/api/qti-tools/2_3/convert"
-  );
-
+  let qti3 = await fetchXMLFile(item.href);
+  if (!item.qti3) {
+    qti3 = await transformQti(
+      qti3,
+      "https://europe-west4-qti-convert.cloudfunctions.net/api/qti-tools/2_3/convert"
+    );
+  }
   const makeAbsolutePath = (mediaLocation, relativePath) => {
     return removeDoubleSlashes(`${mediaLocation}/${relativePath}`);
   };
